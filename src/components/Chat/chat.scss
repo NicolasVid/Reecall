@@ -1,5 +1,195 @@
+@use 'src/styles/vars';
+
 .chat {
     background-color: #FDFEFE;
     height: 100vh;
     width: 50%;
+
+    .chat-header {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        box-shadow: 0.3rem 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+        
+
+        &__icon--menu {
+            width: 40px;
+        }
+
+        &__text {
+            margin-left: 4rem;
+            width: 100%;
+            
+            h1{
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            &--star {
+                width: 20px;
+                margin-left: 0.8rem;
+            }
+        }
+
+        &__logos {
+            width: 100%;
+            text-align: right;
+
+            &--item {
+                margin: 0.5rem;
+            }
+        }
+    }
+
+    .chat-messages {
+        margin-top: 1rem;
+
+
+        &__header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+            color: #8699E3;
+            font-weight: bold;
+            border-bottom: 1px solid vars.$toolbar-text-color;
+            width: 95%;
+            text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                color: vars.$toolbar-text-color;
+                margin-top: 0.2rem;
+            }
+        }
+
+        &__message {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            margin-top: 1rem;
+            position: relative;
+            padding-left: 5.5rem;
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 200px;
+                left: 1.5rem;
+                position: absolute;
+            }
+
+            &--link {
+                width: 35%;
+                background-color: #F3F4F6;
+                border-radius: 8px;
+                padding: 0.5rem 1.5rem;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 2rem;
+
+                &--text {
+                    margin: 0 2rem 0 1rem;
+                }
+
+                .PSD {
+                    background-color: #7C78FF;
+                    padding: 1rem 0.5rem;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+
+                .ZIP {
+                    background-color: vars.$orange-color;
+                    padding: 1rem 0.7rem;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+
+            &--content {
+                background-color: #F3F4F6;
+                width: 90%;
+                border-radius: 8px;
+                padding: 1.5rem;
+                font-size: 15px;
+
+                h1 {
+                    font-weight: bold;
+                }
+
+            }
+
+            span {
+                margin: 0 2rem 0 1rem;
+                color: vars.$toolbar-text-color;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    .chat-input {
+        margin: 2rem auto;       
+        width: 75%;
+        border: 1px solid vars.$toolbar-text-color;
+        border-radius: 10px;
+        font-size: 15px;
+
+        &__value {
+            margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+        }
+
+        &__footer {
+            margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+            display: flex;
+            border-top: 1px solid vars.$toolbar-text-color;
+            padding-top: 0.8rem;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                text-align: left;
+                width: 100%;
+
+                span {
+                color: vars.$purple-color;
+                }
+            }
+
+            button {
+                border: none;
+                background-color: #556ED7;
+                width: 60px;
+                height: 28px;
+                border-radius: 7px;
+                color: #fff;
+                font-size: 15px;
+            }
+
+        &--interactions {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+
+        }
+        &__logo {
+            width: 20px;
+            color: vars.$toolbar-text-color;
+            margin-right: 1rem;
+        }
+    }
 }
