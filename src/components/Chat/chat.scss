@@ -147,18 +147,19 @@
 
     .chat-input {
         margin: 2rem auto;       
-        width: 75%;
+        width: 80%;
         border: 1px solid vars.$toolbar-text-color;
         border-radius: 10px;
         font-size: 15px;
 
         &__value {
-            margin: 1.5rem 1.5rem 0.5rem 1.5rem;
-            width: 500px;
+            padding: 0 1.5rem 0.5rem 1.5rem;
+            width: 100%;
             border: none;
             font-size: 14px;
             height: 60px;
             resize: none;
+            margin-top: 1.5rem;
         }
 
         &__footer {
