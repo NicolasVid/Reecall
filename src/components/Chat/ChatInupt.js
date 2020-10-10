@@ -7,9 +7,10 @@ import {
 
 const ChatInput = () => (
   <div className="chat-input">
-    <div className="chat-input__value">We've all recieved those flashy marketing emails that catch our eye and
-      encourage us to take action. They often follow all the rules for a successful
-    </div>
+    <textarea
+      className="chat-input__value"
+      placeholder="Your message"
+    />
     <div className="chat-input__footer">
       <h1>Subject: <span>Design Template <FontAwesomeIcon icon={faSortDown} /></span></h1>
       <div className="chat-input__footer--interactions">

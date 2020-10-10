@@ -1,12 +1,12 @@
 @use 'src/styles/vars';
 
 .toolbar {
-    background-color: #F7F7FA;
+    background-color: #F6F6FA;
     height: 100vh;
-    width: 20%;
+    width: 250px;
 
     .profil {
-        margin: 1.5rem;
+        margin: 2rem;
         display: flex;
 
         &__image {
@@ -20,15 +20,15 @@
             flex-direction: column;
             justify-content: center;
             align-items: left;
-            margin-left: 0.5rem;
+            margin-left: 0.8rem;
 
             h1 {
-                font-size: 15px;
+                font-size: 19px;
                 font-weight: bold;
             }
 
             p {
-                font-size: 13px;
+                font-size: 18px;
                 margin-top: 0.2rem;
                 color: vars.$toolbar-text-color;
             }
@@ -36,7 +36,7 @@
     }
 
     .mail-menu {
-        margin: 3rem 1.5rem;
+        margin: 3rem 2rem;
 
         .mail-menu__item {
             display: flex;
@@ -69,7 +69,7 @@
     }
 
     .work-menu {
-        margin: 0 1.5rem;
+        margin: 0 2rem;
 
         &__title {
             display: flex;
@@ -77,7 +77,7 @@
 
             h1 {
                 font-weight: bold;
-                padding-bottom:0.8rem;
+                padding-bottom:0.6rem;
             }
 
             span {
@@ -89,7 +89,7 @@
 
         &__item {
             display: flex;
-            margin-top: 1rem;
+            margin-top: 0.8rem;
             
             h1 {
                 color: vars.$toolbar-text-color;
@@ -99,7 +99,6 @@
 
             p {
                 color: vars.$purple-color;
-                width: 100%;
                 text-align: right;
             }
 
@@ -110,19 +109,19 @@
     }
 
     .tags-menu {
-        margin: 3rem 1.5rem;
+        margin: 3rem 2rem;
 
             h1 {
                 font-weight: bold;
                 border-bottom: 3px solid #F4F5F7;
-                padding-bottom:0.8rem;
+                padding-bottom:0.6rem;
             }
 
         
 
         &__item {
             display: flex;
-            margin-top: 1rem;
+            margin-top: 0.8rem;
             
             h2 {
                 color: vars.$toolbar-text-color;

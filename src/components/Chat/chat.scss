@@ -3,13 +3,13 @@
 .chat {
     background-color: #FDFEFE;
     height: 100vh;
-    width: 50%;
+    width: 750px;
 
     .chat-header {
         display: flex;
         align-items: center;
-        padding: 2rem;
-        box-shadow: 0.3rem 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+        padding: 1.25rem;
+        box-shadow: 0.3rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
         
 
         &__icon--menu {
@@ -21,13 +21,14 @@
             width: 100%;
             
             h1{
-                font-size: 28px;
+                font-size: 27px;
                 font-weight: bold;
                 margin-bottom: 0.5rem;
+                width: 100%;
             }
 
             p {
-                font-size: 17px;
+                font-size: 16px;
             }
 
             &--star {
@@ -47,7 +48,7 @@
     }
 
     .chat-messages {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
 
 
         &__header {
@@ -125,6 +126,10 @@
                 padding: 1.5rem;
                 font-size: 15px;
 
+                &--owner {
+                    background-color: #EDEEFF;
+                }
+
                 h1 {
                     font-weight: bold;
                 }
@@ -148,10 +153,15 @@
 
         &__value {
             margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+            width: 500px;
+            border: none;
+            font-size: 14px;
+            height: 60px;
+            resize: none;
         }
 
         &__footer {
-            margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+            margin: 0.5rem 1.5rem 0.5rem 1.5rem;
             display: flex;
             border-top: 1px solid vars.$toolbar-text-color;
             padding-top: 0.8rem;

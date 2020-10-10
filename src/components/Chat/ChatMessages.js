@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import profilPicture from 'src/images/profilPicture.jpg';
-import derek from 'src/images/Derek.jpg';
+import derek from 'src/images/derek.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -54,7 +54,7 @@ const ChatMessages = () => (
         src={profilPicture}
         alt="profil_picture"
       />
-      <div className="chat-messages__message--content">
+      <div className="chat-messages__message--content chat-messages__message--content--owner">
         <h1>Hi,</h1>
         <p>I will send you the full scope of work after shooping, because im busy now.</p>
       </div>

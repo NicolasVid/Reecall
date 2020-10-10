@@ -16,13 +16,15 @@ const Mail = () => (
       <h2>Design new project "Anama"</h2>
       <p>How long will it take you to transfer all the data to us ..</p>
     </div>
-    <div className="mail">
+    <div className="mail mail--active">
       <div className="mail__title">
         <h1>Derek Lichardson <FontAwesomeIcon className="mail__title--star" icon={faStar} color="#FE9F44" /></h1>
         <span>2 days ago</span>
       </div>
-      <h2>Design Template</h2>
-      <a href="/" className="mail__link--psd">Template.psd</a><a href="/" className="mail__link--doc">Description.doc</a>
+      <div className="mail__link">
+        <h2>Design Template</h2>
+        <a href="/" className="mail__link--psd">Template.psd</a><a href="/" className="mail__link--doc">Description.doc</a>
+      </div>
     </div>
     <div className="mail">
       <div className="mail__title">
