@@ -3,7 +3,8 @@
 .toolbar {
     background-color: #F6F6FA;
     height: 100vh;
-    width: 250px;
+    min-width: 250px;
+    width: 20%;
 
     .profil {
         margin: 2rem;
