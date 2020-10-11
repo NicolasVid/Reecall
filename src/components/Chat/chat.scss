@@ -6,6 +6,8 @@
     min-width: 750px;
     width: 50%;
 
+
+    //CSS sur ChatHeader
     .chat-header {
         display: flex;
         align-items: center;
@@ -15,6 +17,11 @@
 
         &__icon--menu {
             width: 40px;
+            margin-left: 0.5rem;
+
+            &:hover {
+                color: vars.$orange-color;
+            }
         }
 
         &__text {
@@ -44,10 +51,16 @@
 
             &--item {
                 margin: 0.5rem;
+                color: #525354;
+
+                &:hover {
+                    color: vars.$orange-color;
+                }
             }
         }
     }
 
+    //CSS sur ChatMessage
     .chat-messages {
         margin-top: 1.5rem;
 
@@ -89,18 +102,19 @@
             }
 
             &--link {
-                width: 35%;
+                width: 220px;
                 background-color: #F3F4F6;
                 border-radius: 8px;
-                padding: 0.5rem 1.5rem;
+                padding: 0.5rem 0.5rem;
                 font-size: 15px;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 margin-right: 2rem;
 
                 &--text {
-                    margin: 0 2rem 0 1rem;
+                    margin: 0 1rem 0 1rem;
+                    width: 100px;
                 }
 
                 .PSD {
@@ -117,6 +131,10 @@
                     border-radius: 10px;
                     font-weight: bold;
                     color: #fff;
+                }
+
+                &--logo {
+                    width: 45px;
                 }
             }
 
@@ -141,25 +159,30 @@
                 margin: 0 2rem 0 1rem;
                 color: vars.$toolbar-text-color;
                 margin-top: 0.2rem;
+                width: 3rem;
             }
         }
     }
 
+    //CSS sur ChatInput
     .chat-input {
-        margin: 2rem auto;       
-        width: 80%;
+        margin: 2rem 6rem 2rem 5.5rem;       
+        max-width: 90%;
         border: 1px solid vars.$toolbar-text-color;
         border-radius: 10px;
         font-size: 15px;
+        text-align:center;
+
 
         &__value {
-            padding: 0 1.5rem 0.5rem 1.5rem;
-            width: 100%;
+            padding: 0 0 0.5rem 0;
+            width: 90%;
             border: none;
             font-size: 14px;
             height: 60px;
             resize: none;
             margin-top: 1.5rem;
+
         }
 
         &__footer {

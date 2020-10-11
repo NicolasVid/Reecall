@@ -38,7 +38,7 @@ const ChatMessages = () => (
           <h1>Template</h1>
           <p>PSD</p>
         </div>
-        <FontAwesomeIcon icon={faDownload} className="chat-header__icon--menu" size="2x" />
+        <FontAwesomeIcon icon={faDownload} className="chat-messages__message--link--logo" size="2x" />
       </div>
       <div className="chat-messages__message--link">
         <div className="ZIP">ZIP</div>
@@ -46,7 +46,7 @@ const ChatMessages = () => (
           <h1>Description</h1>
           <p>ZIP</p>
         </div>
-        <FontAwesomeIcon icon={faDownload} className="chat-header__icon--menu" size="2x" />
+        <FontAwesomeIcon icon={faDownload} className="chat-messages__message--link--logo" size="2x" />
       </div>
     </div>
     <div className="chat-messages__message">

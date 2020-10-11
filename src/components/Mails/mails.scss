@@ -6,6 +6,7 @@
     min-width: 420px;
     width: 30%;
 
+    //CSS sur InputMail
     .input-mail {
         margin: 1.5rem 1rem;
         display: flex;
@@ -43,7 +44,7 @@
         }
     }
 
-    
+    //CSS sur Mail
     .mail {
         display: flex;
         flex-direction: column;
@@ -55,6 +56,10 @@
 
         &--active {
             background-color: #FDFEFE;
+        }
+
+        &:not(.mail--active):hover {
+            background-color: rgba(#FDFEFE, 0.3);
         }
 
         &__title {

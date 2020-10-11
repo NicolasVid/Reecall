@@ -11,7 +11,7 @@ const WorkMenu = () => (
       <p> </p>
     </div>
     <div className="work-menu__item">
-      <h1>Mark Monserat</h1>
+      <h1>Mark Monsetrat</h1>
       <p>3<span>*</span></p>
     </div>
   </div>
